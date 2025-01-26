@@ -7,11 +7,13 @@ authors = [
     { name = "Junaid-Nazir-828", email = "junaidnazir7501@gmail.com" }
 ]
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "litellm>=1.59.7",
+]
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project.scripts]
-uv_project = "uv_project.hello:main"
+uv_project = "uv_project.hello:gemini"
